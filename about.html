@@ -11,8 +11,10 @@
      <!-- Header -->
      <header>
         <div class="header-container">
-            <div class="logo"> 
-                <img src="./assest//logo.png" alt="">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assest//logo.png" alt="">
+                </a>
             </div>
             <div class="mobile-menu">☰</div>
             <nav>
@@ -71,5 +73,16 @@
             <p>&copy; 2023 Lost Property Solutions. All Rights Reserved.</p>
         </div>
     </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+    
 </body>
 </html>
